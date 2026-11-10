@@ -1,0 +1,28 @@
+{
+  "name": "rewear-campus",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimal campus second-hand fashion marketplace built with React, Express, PostgreSQL and Docker.",
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "node --env-file=.env --watch server/index.js",
+    "dev:client": "vite --config vite.config.js",
+    "build": "vite build --config vite.config.js",
+    "start": "node server/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "concurrently": "^9.2.1",
+    "vite": "^7.1.12",
+    "typescript": "^5.9.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0"
+  }
+}

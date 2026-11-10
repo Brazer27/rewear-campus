@@ -1,0 +1,14 @@
+.git
+.github
+.vscode
+.idea
+.env
+.env.*
+!.env.example
+node_modules
+client/node_modules
+client/dist
+coverage
+*.log
+.DS_Store
+Thumbs.db
