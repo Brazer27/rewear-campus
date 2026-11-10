@@ -118,7 +118,7 @@ Allowed `condition` values are `Like New`, `Good`, and `Fair`. The backend valid
    cd rewear-campus
    ```
 
-2. Create your local environment file:
+2. Create local environment file:
 
    **Windows PowerShell:**
 
@@ -282,47 +282,4 @@ After building, record the actual size on your computer:
 docker images rewear-campus
 ```
 
-Add the observed output or a screenshot to `docs/screenshots/`. Image size can vary by platform, Docker version, and build cache; do not copy a size from another computer.
-
 The Dockerfile uses `COPY` because it copies local files and directories predictably. `ADD` has extra behavior, such as automatically extracting local tar archives and supporting remote URLs, which is unnecessary for this project.
-
-## 14. Screenshots
-
-Add your own screenshots after running the project. Suggested filenames:
-
-- `docs/screenshots/01-homepage.png`
-- `docs/screenshots/02-add-product.png`
-- `docs/screenshots/03-compose-ps.png`
-- `docs/screenshots/04-api-health.png`
-- `docs/screenshots/05-api-post-201.png`
-- `docs/screenshots/06-persistence.png`
-- `docs/screenshots/07-docker-images.png`
-
-Example Markdown once the screenshots exist:
-
-```md
-![ReWear Campus homepage](docs/screenshots/01-homepage.png)
-```
-
-## 15. Article and Demo Video
-
-- **Public article:** [Add your Medium / dev.to / Hashnode / LinkedIn Article URL here]
-- **YouTube demo (3–5 minutes, Public):** [Add your YouTube URL here]
-- **GitHub repository:** [Add your public repository URL here]
-
-The video should use your own voice and demonstrate the app, Dockerfile, Compose services, endpoint responses, and database persistence. The article should explain the problem, architecture, Docker setup, local run instructions, screenshots, and lessons learned.
-
-## 16. AI Usage Declaration
-
-AI tools were used as learning and development assistance to help plan the project structure, explain Docker and Docker Compose concepts, draft starter code, and review documentation. I reviewed, adapted, and tested the code in my local development environment. I am responsible for understanding the implementation and for the final submitted work.
-
-## 17. Security and Scope Notes
-
-- `.env` contains local configuration and must not be committed. Only `.env.example` is tracked.
-- Change the sample database password in `.env` before running the project.
-- The MVP does not collect payment details and does not implement user authentication.
-- This is an educational localhost demonstration. Before a public production launch, add authentication, authorization, rate limiting, HTTPS, secure secret management, backups, privacy notices, and appropriate personal-data controls.
-
-## License
-
-This repository is an educational project. Add a license if you intend to permit reuse or distribution.
